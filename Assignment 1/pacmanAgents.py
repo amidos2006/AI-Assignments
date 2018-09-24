@@ -29,7 +29,7 @@ class RandomAgent(Agent):
         # returns random action from all the valide actions
         return actions[random.randint(0,len(actions)-1)]
 
-class OneStepLookAhead(Agent):
+class OneStepLookAheadAgent(Agent):
     # Initialization Function: Called one time when the game starts
     def registerInitialState(self, state):
         return;
@@ -41,9 +41,9 @@ class OneStepLookAhead(Agent):
         # get all the successor state for these actions
         successors = [(state.generatePacmanSuccessor(action), action) for action in legal]
         # evaluate the successor states using scoreEvaluation heuristic
-        scored = [(scoreEvaluation(state), action) for state, action in successors]
+        scored = [(admissibleHeuristic(state), action) for state, action in successors]
         # get best choice
-        bestScore = max(scored)[0]
+        bestScore = min(scored)[0]
         # get all actions that lead to the highest score
         bestActions = [pair[1] for pair in scored if pair[0] == bestScore]
         # return random action from the list of the best actions
