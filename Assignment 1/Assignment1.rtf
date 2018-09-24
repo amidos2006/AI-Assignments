@@ -1,0 +1,140 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier-Bold;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red64\green64\blue64;\red251\green2\blue7;\red255\green0\blue0;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c25098\c25098\c25098;\cssrgb\c100000\c14913\c0;\csgenericrgb\c100000\c0\c0;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid101\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid102\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid201\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid202\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+{\info
+{\author Christoph Salge}}\paperw11900\paperh16840\margl1440\margr1440\vieww11900\viewh12860\viewkind1
+\deftab720
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\f0\fs28 \cf0 ##################  Pacman Instructions  ####################\
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\i \cf2 \
+Assignment:\
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\i0 \cf0 Implement \
+\pard\pardeftab720\li720\fi-360\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls1\ilvl0\cf0 1.	Breadth-first search in the class 
+\b BFSAgent
+\b0 ,\
+2.	Depth-first search in the class 
+\b DFSAgent
+\b0 ,\
+3.	A* search in the class 
+\b AStarAgent
+\b0 ,\
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\cf0 within the in 
+\b pacmanAgents.py
+\b0  file, using 
+\b admissibleHeuristic
+\b0  as a heuristic function for the 
+\b AStarAgent
+\b0 .  \
+\
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\i \cf2 Notes:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl0
+\i0 \cf0 {\listtext	\uc0\u8259 	}Python 2.7 is required to run the Framework.\
+{\listtext	\uc0\u8259 	}All your code must be inside the 
+\b pacmanAgents.py
+\b0  file.\
+{\listtext	\uc0\u8259 	}
+\b RandomAgent
+\b0  and 
+\b OneStepLookAhead
+\b0  are implemented as example agents.\
+{\listtext	\uc0\u8259 	}External libraries are not allowed (as you won't submit them).\
+{\listtext	\uc0\u8259 	}Ways to 
+\b \cf3 fail
+\b0 \cf0  the assignment if:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl1\cf0 {\listtext	\uc0\u8259 	}You try to change any of the system params.\
+{\listtext	\uc0\u8259 	}Your code didn\'92t run (has errors).\
+{\listtext	\uc0\u8259 	}You didn\'92t write the code yourself.\
+{\listtext	\uc0\u8259 	}You submit anything beside 
+\b pacmanAgents.py
+\b0  file.\
+{\listtext	\uc0\u8259 	}You changed the name of the agent classes.\
+{\listtext	\uc0\u8259 	}You implemented your own heuristic.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8259 	}You are only allowed to use these system functions (accessing/changing any other functions or variables is considered cheating):\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl1
+\b \cf0 {\listtext	\uc0\u8259 	}state.getLegalPacmanActions(): 
+\b0 return all the legal actions in this state
+\b \
+{\listtext	\uc0\u8259 	}state.generatePacmanSuccessor(action): 
+\b0 return the next state if pacman take a certain action (return a new copy, doesn\'92t modify the current state)
+\b \
+{\listtext	\uc0\u8259 	}admissibleHeuristic(state):
+\b0  evaluate the current state
+\b \
+{\listtext	\uc0\u8259 	}state.isWin(): 
+\b0 check if this state is win state
+\b \
+{\listtext	\uc0\u8259 	}state.isLose(): 
+\b0 check if this state is lose state
+\b \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl0
+\b0 \cf0 {\listtext	\uc0\u8259 	}\cf4 The forward model (
+\b generatePacmanSuccessor
+\b0 ) is limited to a certain amount of calls, don't waste them. If you exceed the limit, 
+\b None
+\b0  will be returned.\cf0 \
+{\listtext	\uc0\u8259 	}If you did not reach a terminal state, return a random action.\
+{\listtext	\uc0\u8259 	}For A* algorithm:     
+\i f(n) = g(n) + h(n)\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl1
+\i0 \cf0 {\listtext	\uc0\u8259 	}
+\i f(n)
+\i0 : the total cost of the next node\
+{\listtext	\uc0\u8259 	}
+\i g(n)
+\i0 : is the cost of the path since the start node (
+\b the depth of the current node
+\b0 )\
+{\listtext	\uc0\u8259 	}
+\i h(n)
+\i0 : is a heuristic function that estimates the remaining cost till the goal (
+\b admissibleHeuristic(state)
+\b0 )\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8259 	}For array sorting, you can use python internal sorting function. example: 
+\b array.sort(key=lambda x: scoreEvaluation(x)). 
+\b0 This example sort the array based on the scoreEvaluation function.
+\b \
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\b0 \cf0 \
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\i \cf2 How to run:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls3\ilvl0
+\i0 \cf0 {\listtext	\uc0\u8259 	}To play pacman: \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls3\ilvl1
+\f1\b \cf0 	   python pacman.py
+\f2\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls3\ilvl0
+\f0 \cf0 {\listtext	\uc0\u8259 	}To run a certain agent using graphics use the following command: \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls3\ilvl1
+\f1\b \cf0 	   python pacman.py -p \cf3 AgentName
+\f2\b0 \cf0 \
+}

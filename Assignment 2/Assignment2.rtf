@@ -1,0 +1,220 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red64\green64\blue64;\red255\green0\blue0;\red26\green26\blue26;
+\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c25098\c25098\c25098;\csgenericrgb\c100000\c0\c0;\cssrgb\c13333\c13333\c13333;
+\cspthree\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid101\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid102\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid103\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid104\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid105\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid106\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li4320\lin4320 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid201\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+{\info
+{\author Christoph Salge}}\paperw11900\paperh16840\margl1440\margr1440\vieww15980\viewh12880\viewkind1
+\deftab720
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\f0\fs28 \cf0 ##################  Pacman Instructions  ####################\
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\i \cf2 \
+Assignment:\
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\i0 \cf0 Implement \
+\pard\pardeftab720\li720\fi-360\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls1\ilvl0\cf0 1.	Hill Climber Algorithm in the class 
+\b HillClimberAgent
+\b0 ,\
+2.	Genetic Algorithm in the class 
+\b GeneticAgent
+\b0 ,\
+3.	Monte Carlo Tree Search (MCTS) in the class 
+\b MCTSAgent
+\b0 ,\
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\cf0 within the in 
+\b pacmanAgents.py
+\b0  file, using 
+\b scoreEvaluation
+\b0  as a heuristic function.  \
+\
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\i \cf2 Notes:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl0
+\i0 \cf0 {\listtext	\uc0\u8259 	}Python 2.7 is required to run the Framework.\
+{\listtext	\uc0\u8259 	}All your code must be inside the 
+\b pacmanAgents.py
+\b0  file.\
+{\listtext	\uc0\u8259 	}Only submit 
+\b pacmanAgents.py
+\b0  file. If you submit anything else you will fail the assignment.\
+{\listtext	\uc0\u8259 	}Only use the heuristic function in the
+\b  heuristics.py
+\b0  file (do not implement your own heuristic).\
+{\listtext	\uc0\u8259 	}
+\b RandomAgent
+\b0 , 
+\b GreedyAgent, and RandomSequenceAgent
+\b0  are implemented example agents.\
+{\listtext	\uc0\u8259 	}
+\b Hill Climber
+\b0  and 
+\b Genetic Algorithm 
+\b0 plans a sequence of actions to execute instead of building a tree. Check 
+\b RandomSequenceAgent
+\b0  as an example of sequence planning.\
+{\listtext	\uc0\u8259 	}External libraries are not allowed (as you won't submit them)\
+{\listtext	\uc0\u8259 	}You will fail the assignment if you try to change any of the system params.\
+{\listtext	\uc0\u8259 	}You are only allowed to use these system functions (accessing/changing any other functions or variables is considered cheating):\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl1
+\b \cf0 {\listtext	\uc0\u8259 	}state.getLegalPacmanActions(): 
+\b0 return all the legal actions in this state
+\b \
+{\listtext	\uc0\u8259 	}state.getAllPossibleActions(): 
+\b0 return all the possible actions (Directions.North, Directions.South, Directions.East, Directions.West)
+\b \
+{\listtext	\uc0\u8259 	}state.generatePacmanSuccessor(action): 
+\b0 return the next state if pacman take a certain action (return a new copy, doesn\'92t modify the current state)
+\b \
+{\listtext	\uc0\u8259 	}scoreEvaluation(state):
+\b0  evaluate the current state\
+\ls2\ilvl1
+\b {\listtext	\uc0\u8259 	}normalizedScoreEvaluation(rootState, currentState):
+\b0  evaluate the current state with respect to rootState then scale it down.
+\b \
+{\listtext	\uc0\u8259 	}state.isWin(): 
+\b0 check if this state is win state
+\b \
+{\listtext	\uc0\u8259 	}state.isLose(): 
+\b0 check if this state is lose state
+\b \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl0
+\b0 \cf0 {\listtext	\uc0\u8259 	}\cf3 The forward model (
+\b generatePacmanSuccessor
+\b0 ) is limited to a certain amount of calls, don't waste them. If you exceed the limit, 
+\b None
+\b0  will be returned.\cf0 \
+{\listtext	\uc0\u8259 	}For 
+\b Hill Climber
+\b0  and 
+\b Genetic Algorithm
+\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl1\cf0 {\listtext	\uc0\u8259 	}Use 
+\b getAllPossibleActions
+\b0  to assign your action sequence. Don\'92t worry applying illegal action. The forward model ignore illegal actions and apply Directions.STOP instead.\
+{\listtext	\uc0\u8259 	}Make sure to check if you reach the terminal state while executing your action sequence as the remaining actions can\'92t be executed.\
+{\listtext	\uc0\u8259 	}Always return the first action from the sequence with the highest 
+\b scoreEvaluation
+\b0 .\
+\pard\tx220\tx720\tx1440\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8259 	}For 
+\b Hill Climber
+\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl1\cf0 {\listtext	\uc0\u8259 	}Action Sequence are of length 5\
+{\listtext	\uc0\u8259 	}Each action in the sequence has 50% chance to be changed into random action.\
+\pard\tx220\tx720\tx1440\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8259 	}For 
+\b Genetic Algorithm
+\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl1\cf0 {\listtext	\uc0\u8259 	}Each chromosome is an action sequence of length 5.\
+{\listtext	\uc0\u8259 	}Use a population of size 8.\
+{\listtext	\uc0\u8259 	}Use rank selection to select chromosomes\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl2\cf0 {\listtext	\uc0\u8259 	}Sort all chromosomes based on fitness. \
+{\listtext	\uc0\u8259 	}Give each chromosome a rank (from 1(worst) to length of chromosomes (best)).\
+{\listtext	\uc0\u8259 	}Select chromosomes proportionally to their ranking\
+{\listtext	\uc0\u8259 	}For example:\
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl3\cf0 {\listtext	\uc0\u8259 	}Assume we have 4 chromosomes (they have ranks 4,3,2,1 where 4 is better than 1)\
+{\listtext	\uc0\u8259 	}The total of the rankings is 10 = 4 + 3 + 2 + 1.\
+{\listtext	\uc0\u8259 	}Based on that, the probability to pick each chromosome are 4/10, 3/10, 2/10, 1/10.\
+{\listtext	\uc0\u8259 	}This is the probability that each chromosome is selected.\
+\pard\tx1660\tx2160\tx2880\pardeftab720\li2160\fi-2160\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl2\cf0 {\listtext	\uc0\u8259 	}Extra reading:\
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl3\cf0 {\listtext	\uc0\u8259 	}You can have a description of the Rank Selection process here (http://www.obitko.com/tutorials/genetic-algorithms/selection.php). \
+{\listtext	\uc0\u8259 	}For more details check the roulette wheel selection and use the rank instead of fitness (https://en.wikipedia.org/wiki/Fitness_proportionate_selection).\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl1\cf0 {\listtext	\uc0\u8259 	}For generating the next population:\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl2\cf0 {\listtext	\uc0\u8259 	}Use Rank Selection for picking each pair\
+\pard\tx1637\tx2122\pardeftab720\li2153\fi-2154\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl3\cf0 {\listtext	\uc0\u8259 	}Apply a random test, If the test result is less (or equal) to 70%, the pair will generate two children by crossing-over.\
+\pard\tx1630\tx2116\pardeftab720\li2145\fi-2146\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl4\cf0 {\listtext	\uc0\u8259 	}The crossover process is:\
+\pard\tx2401\tx2856\pardeftab720\li2889\fi-2890\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl5\cf0 {\listtext	\uc0\u8259 	}
+\fs26 \cf4 \expnd0\expndtw0\kerning0
+Let's suppose we have a chromosome\'a0X and a chromosome\'a0Y.\
+\pard\tx2401\tx2852\pardeftab720\li2864\fi-2865\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl5\cf4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8259 	}\expnd0\expndtw0\kerning0
+Let's call by XY' the new chromosome.\
+\pard\tx2393\tx2848\tx2862\pardeftab720\li2871\fi-2872\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl5\cf4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8259 	}\expnd0\expndtw0\kerning0
+For each gene (action) in the XY' sequence, we do a random test.\'a0\
+\pard\tx2387\tx2872\pardeftab720\li2861\fi-2862\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl5\cf4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8259 	}\expnd0\expndtw0\kerning0
+If the result of the test is below 50%, the gene will be donated by X. Otherwise by Y
+\fs28 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl3\cf0 {\listtext	\uc0\u8259 	}Otherwise (test result bigger than 70%), keep the pair in the next generation.\
+\pard\tx1660\tx2160\tx2880\pardeftab720\li2160\fi-2160\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl2\cf0 {\listtext	\uc0\u8259 	}After you get all the new chromosomes of the new population, apply a random test for each chromosome:\
+\pard\tx2380\tx2880\pardeftab720\li2880\fi-2880\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl3\cf0 {\listtext	\uc0\u8259 	}if the test result is less (or equal) to 10%, mutate the chromosome by random choice. Choose a random action in the chromosome sequence and replace it by another action, chose it randomly. \
+\pard\tx1653\tx2157\tx2160\tx2880\pardeftab720\li2175\fi-2176\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl1\cf0 {\listtext	\uc0\u8259 	}\cf5 \cb6 \expnd0\expndtw0\kerning0
+The whole population is replaced using\'a0crossover\'a0and mutated chromosomes, and some of them have a chance to survive\cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8259 	}For 
+\b MCTS
+\b0 :\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl1\cf0 {\listtext	\uc0\u8259 	}Exploitation should use 
+\b normalizedScoreEvaluation 
+\b0 function instead of 
+\b scoreEvaluation 
+\b0  to balance it with respect to the Exploration term.\
+{\listtext	\uc0\u8259 	}Use 
+\b getLegalPacmanActions
+\b0  to build the tree.\
+{\listtext	\uc0\u8259 	}Use 1 as the constant between exploitation and exploration.\
+{\listtext	\uc0\u8259 	}Fix the number of rollouts to 5 as its hard to reach a terminal state in small amount of time.\
+{\listtext	\uc0\u8259 	}Don\'92t save the state in the tree nodes as the game is stochastic. \cf7 	\expnd0\expndtw0\kerning0
+Always apply the actions from the root state. every time you go over the tree. \cf0 \kerning1\expnd0\expndtw0 \
+{\listtext	\uc0\u8259 	}Final Action Selection: return the action associated with the most visited node (Break ties randomly).\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8259 	}You can't change name of the agent classes.\
+{\listtext	\uc0\u8259 	}For array sorting, you can use python internal sorting function. example: 
+\b array.sort(key=lambda x: scoreEvaluation(x))\
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\b0 \cf0 \
+\pard\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\i \cf2 How to run:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+\ls3\ilvl0
+\i0 \cf0 {\listtext	\uc0\u8259 	}To play pacman: 
+\f1 python pacman.py\
+\ls3\ilvl0
+\f0 {\listtext	\uc0\u8259 	}To run a certain agent using graphics use the following command: 
+\f1 python pacman.py -p AgentName\
+\pard\pardeftab720\sl300\sa240\partightenfactor0
+
+\f2\b\fs26\fsmilli13333 \cf7 \expnd0\expndtw0\kerning0
+Note:
+\b0  
+\f0\fs28 You are implementing a vanilla version of these AIs, being slow or going back and forth might be part of the algorithm behavior in the amount of time given for each move \
+\pard\tx720\pardeftab720\ri-6\sl259\slmult1\sa160\qj\partightenfactor0
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \
+}
