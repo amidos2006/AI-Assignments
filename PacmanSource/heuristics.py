@@ -11,4 +11,4 @@ def normalizedScoreEvaluation(rootState, currentState):
 def admissibleHeuristic(state):
     if state.isLose():
         return 1000.0;
-    return state.getNumFood() + len(self.state.getCapsules());
+    return state.getNumFood() + len(state.getCapsules());
